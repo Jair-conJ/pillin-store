@@ -94,17 +94,20 @@
 
   "flex-layout.col#sac": {
     "children": [
-      "rich-text#title-sac"
+      "rich-text#title-sac",
+      "flex-layout.col#footer-menu-sac"
     ]
   },
   "flex-layout.col#cor": {
     "children": [
-      "rich-text#title-cor"
+      "rich-text#title-cor",
+      "flex-layout.col#footer-menu-cor"
     ]
   },
   "flex-layout.col#cue": {
     "children": [
-      "rich-text#title-cue"
+      "rich-text#title-cue",
+      "flex-layout.col#footer-menu-cuenta"
     ]
   },
   "flex-layout.col#sos": {
@@ -122,7 +125,7 @@
       "rich-text#title-despa"
     ]
   },
-
+  // Servicio Atención al Cliente SAC
   "rich-text#title-sac": {
     "props": {
       "blockClass": "footer-titles",
@@ -131,6 +134,57 @@
       "text": "### Servicio al Cliente"
     }
   },
+  // Menú SAC
+  "flex-layout.col#footer-menu-sac": {
+    "children":[
+      "rich-text#list-tyc",
+      "rich-text#list-despacho",
+      "rich-text#list-cambio",
+      "rich-text#list-retiro",
+      "rich-text#list-faq"
+    ]
+  },
+  "rich-text#list-tyc": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Términos y Condiciones](#)"
+    }
+  },
+  "rich-text#list-despacho": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Despachos](#)"
+    }
+  },
+  "rich-text#list-cambio": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Cambios y Devoluciones](#)"
+    }
+  },
+  "rich-text#list-retiro": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Retiro en tienda](#)"
+    }
+  },
+  "rich-text#list-faq": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Preguntas Frecuentes](#)"
+    }
+  },
+  // Corporativo COR
   "rich-text#title-cor": {
     "props": {
       "blockClass": "footer-titles",
@@ -139,6 +193,48 @@
       "text": "### Corporativo"
     }
   },
+  // Menu COR
+  "flex-layout.col#footer-menu-cor": {
+    "children": [
+      "rich-text#list-nosotros",
+      "rich-text#list-tiendas",
+      "rich-text#list-contacto",
+      "rich-text#list-trabaja"
+    ]
+  },
+  "rich-text#list-nosotros": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Nosotros](#)"
+    }
+  },
+  "rich-text#list-tiendas": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Tiendas](#)"
+    }
+  },
+  "rich-text#list-contacto": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Contacto](#)"
+    }
+  },
+  "rich-text#list-trabaja": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Trabaja con Nosotros](#)"
+    }
+  },
+  // Mi Cuenta CUE
   "rich-text#title-cue": {
     "props": {
       "blockClass": "footer-titles",
@@ -147,6 +243,48 @@
       "text": "### Mi Cuenta"
     }
   },
+  //Menu Cuenta CUE
+  "flex-layout.col#footer-menu-cuenta": {
+    "children": [
+      "rich-text#list-registro",
+      "rich-text#list-sesion",
+      "rich-text#list-recuperar",
+      "rich-text#list-favoritos"
+    ]
+  },
+  "rich-text#list-registro": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Regístrate](#)"
+    }
+  },
+  "rich-text#list-sesion": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Iniciar Sesión](#)"
+    }
+  },
+  "rich-text#list-recuperar": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Recuperar Contraseña](#)"
+    }
+  },
+  "rich-text#list-favoritos": {
+    "props": {
+      "blockClass": "footer-list",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "- [Mis Favoritos](#)"
+    }
+  },
+  // Redes Sociales SOS
   "rich-text#title-sos": {
     "props": {
       "blockClass": "footer-titles",
@@ -171,6 +309,4 @@
       "text": "### Simulador de despacho"
     }
   }
-
-
 }
